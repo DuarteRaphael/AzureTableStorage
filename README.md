@@ -6,6 +6,4 @@ O projeto gera uma lista de cotação de moedas (Euro, Libra e Dólar) no Azure 
 
 Ele retorna uma lista com os atributos:
 
-° Sigla da moeda
-° Data da cotação
-º Valor
+Sigla da moeda, Data da cotação, Valor.
