@@ -25,7 +25,7 @@ namespace CargaCotacoes
             CloudTable table = tableClient.GetTableReference("Cotacoes");
             table.CreateIfNotExists();
 
-            /*
+            
             //Incluindo cotação Euro
             Console.WriteLine("Incluindo cotações do Euro (EUR)...");
             Carga.IncluirCotacao(table, "EUR", "2017-03-22 16:59", 3.4071);
@@ -56,21 +56,7 @@ namespace CargaCotacoes
             Carga.ListarCotacoes<CotacaoDolarEntity>(table, "USD");
 
             Console.WriteLine("Finalizado!");
-            */
-
-            //Trazendo a cotação do Euro
-            Console.WriteLine("Listando cotações do Euro (EUR)...");
-            Carga.ListarCotacoes<CotacaoEntity>(table, "EUR");
-
-            //Trazendo a cotação da Libra
-            Console.WriteLine("Listando cotações da Libra Esterlina (LIB)...");
-            Carga.ListarCotacoes<CotacaoEntity>(table, "LIB");
-
-            //Trazendo a cotação do dolar
-            Console.WriteLine("Listando cotações do Dólar (USD)...");
-            Carga.ListarCotacoes<CotacaoDolarEntity>(table, "USD");
-
-
+            
             Console.ReadKey();
         }
     }
